@@ -23,7 +23,7 @@ reddit = praw.Reddit(
         reply_authors = []
         print("already sent reply")
   print("waiting...")
-  time.sleep(60)
+  time.sleep(4)
   print("back")
   run()
 run()
