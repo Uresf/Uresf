@@ -1,3 +1,4 @@
+@@ -2,6 +2,7 @@
 import time
 import os
 from dotenv import load_dotenv
@@ -8,7 +9,7 @@ reddit = praw.Reddit(
 @@ -19,7 +20,12 @@ def run():
       for reply in tlc.replies:
         reply_authors.append(reply.author)
-      if tlc.author == "h-bot9000"and "h-bot786278162" not in reply_authors:   
+      if tlc.author == "h-bot9000" and "h-bot786278162" not in reply_authors:   
         tlc.reply("h")
         prob = random.randint(6,30000000)
         if prob == 1:
@@ -18,12 +19,11 @@ reddit = praw.Reddit(
           tlc.reply("h")
         reply_authors = []
         print("sent without error")
-      elif "h-bot726278162" in reply_authors:
+      elif "h-bot10000" in reply_authors:
         reply_authors = []
         print("already sent reply")
   print("waiting...")
   time.sleep(60)
   print("back")
   run()
-
 run()
